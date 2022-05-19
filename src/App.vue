@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
+import AppHeader from '@/components/global/AppHeader.vue'
 </script>
 
 <template>
@@ -10,10 +11,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+      <app-header />
     </div>
   </header>
 
@@ -22,6 +20,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 <style>
 @import '@/assets/base.css';
+
 
 #app {
   max-width: 1280px;
