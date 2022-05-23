@@ -1,4 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;800&display=swap');
+
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -77,10 +79,18 @@ body {
 
 thead.report-header,
 tfoot.report-footer{
-  display: none;
+  /* display: none; */
+  font-family: 'Tajawal', sans-serif;
 }
 
 @media print {
+  .container-fluid, .col-3,.col-9 {
+    padding: 0;
+  }
+  body
+    {
+      /* margin: 0 0 25mm 0; */
+    }
   header {
     display: none;
   }
@@ -93,6 +103,14 @@ tfoot.report-footer{
   }
   @page{
     size: landscape;
+    margin: 0 0 10mm 0;
+    @top-center {
+      color: blue;
+      font-weight: bold;
+      font-size: 2em;
+      counter-increment: page;
+      content: counter(page);
+    }
   }
 
   thead.report-header {
