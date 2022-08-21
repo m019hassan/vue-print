@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
-import print from '../views/print.vue'
+import print from '../views/print.vue';
+import dragDrop from '../views/dragDrop.vue'
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
    path: "/print",
    name: "print",
    component: print 
+  },
+  {
+   path: "/dragDrop",
+   name: "dragDrop",
+   component: dragDrop 
   }
 ]
 

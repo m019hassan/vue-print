@@ -1,4 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css"
+import 'devextreme/dist/css/dx.light.css'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 

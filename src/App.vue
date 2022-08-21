@@ -81,12 +81,14 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   body {
     display: flex;
-    place-items: center;
+    place-items: starts;
+    padding: 1rem 0 0;
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    flex-direction: column;
     padding: 0 2rem;
   }
 

@@ -30,6 +30,7 @@
 import ReportContent from "../views/reportContent.vue";
 import ReportFooter from "../views/reportFooter.vue";
 import ReportHeader from "../views/reportHeader.vue";
+// import ReportHeader from "../views/dragDrop.vue";
 
 export default {
   name: "dataTable",
